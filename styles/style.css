@@ -14,7 +14,39 @@
 .container-main {
     justify-content: left;
     align-items: center;
-    height: 75vh
+    height: 75vh;
+    overflow: wrap;
 }
 
-.container-
+.container-character {
+    height: 100%;
+    flex-direction: column;
+    width: 33%
+
+}
+
+.container-image {
+    height: 80%;
+}
+
+.container-text {
+    text-overflow: wrap;
+    text-align: left;
+    height: 20%;
+    display: none
+}
+
+.container-buttons {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%
+}
+
+.button {
+    margin: 0 auto;
+}
+
+button {
+    width: 5em
+}
