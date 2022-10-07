@@ -1,6 +1,11 @@
+body {
+    background-image: url('/images/background.jpg_large');
+    background-size: 100%;
+    background-size: cover;
+}
+
 .container {
     display: flex;
-    border: thin solid black;
     width: 100%;
 }
 
@@ -15,38 +20,59 @@
     justify-content: left;
     align-items: center;
     height: 75vh;
-    overflow: wrap;
+    flex-wrap: wrap;
 }
 
 .container-character {
     height: 100%;
     flex-direction: column;
-    width: 33%
+    width: 33%;
 
 }
 
+.container-name {
+    justify-content:center;
+    font-size: 3rem
+}
+
 .container-image {
+    align-items:top;
+
     height: 80%;
+    width: 100%
+
 }
 
 .container-text {
     text-overflow: wrap;
     text-align: left;
     height: 20%;
-    display: none
+    display: none;
+    font-size: 2rem;
+    color: red
 }
 
 .container-buttons {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 20%
+    height: 20%;
 }
+
 
 .button {
     margin: 0 auto;
 }
 
 button {
-    width: 5em
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10%
 }
+
+img {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 15%
+}
+
